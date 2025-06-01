@@ -60,8 +60,16 @@ main {
   position: absolute;
 }
 .text {
-  background-color: rgb(196, 255, 202);
+  /* background-color: rgb(196, 255, 202); */
   grid-column: 1/7;
+  color: var(--secondary-color);
+  place-self: start;
+}
+.text h2{
+    font-size: 4rem;
+}
+.text p{
+    font-size: 1.2rem;
 }
 
 .download {
