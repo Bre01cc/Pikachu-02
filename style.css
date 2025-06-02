@@ -22,7 +22,6 @@ body {
   margin: auto;
 }
 header {
-  /* background-color: azure; */
   margin-top: 70px;
 }
 header a {
@@ -32,7 +31,7 @@ header a {
   display: flex;
   align-items: center;
   text-decoration: none;
-  gap: 15px;
+  gap: 16px;
   font-size: 2rem;
 }
 main {
@@ -64,16 +63,17 @@ main {
   grid-column: 1/7;
   color: var(--secondary-color);
   place-self: start;
+  z-index: 1;
 }
-.text h2{
-    font-size: 4rem;
+.text h2 {
+  font-size: 4rem;
 }
-.text p{
-    font-size: 1.2rem;
+.text p {
+  font-size: 1.2rem;
 }
 
 .download {
-  place-self: center end;
+  place-self: start end;
   height: 100px;
   width: 411px;
   background-color: #aa5d26;
@@ -83,14 +83,20 @@ main {
   justify-content: center;
   align-items: center;
   grid-column: 7/13;
+  z-index: 1;
 }
 footer {
-  /* display:flex ;
-    align-items: center;
-    justify-content: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 10px;
-  background-color: aqua;
   margin-bottom: 24px;
-  /* height: 5vh;
-    background-color: rgb(136, 79, 8); */
+  color: #aa5d26;
+  font-size: 1rem;
+}
+.pikachu-image{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
