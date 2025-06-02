@@ -94,9 +94,34 @@ footer {
   color: #aa5d26;
   font-size: 1rem;
 }
-.pikachu-image{
+.pikachu-image {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+/* Tablet */
+@media screen and (max-width: 960px) {
+  footer {
+    display: none;
+  }
+  .container{
+    grid-template-columns: 1fr;
+  }
+  .download{
+    grid-column: 1;
+    grid-row: 2;
+    place-self: end center;
+    margin-bottom: 24px;
+  }
+  .title{
+    place-self: start center;
+    transform: translateY(20%);
+  }
+  .text{
+    grid-column: 1;
+     grid-row: 2;
+     place-self: center;
+     text-align: center;
+  }
 }
